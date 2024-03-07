@@ -15,9 +15,30 @@
   background-color: #ccd5ae;
 }
 
-.title {
+.logo {
+  position: absolute;
   font-size: 3.2rem;
-  margin: 2rem 0;
+  top: 2%;
+  left: 5%;
+  background-color: #0f8d8d;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+}
+
+.title {
+  position: absolute;
+  font-size: 3.2rem;
+  top: 2%;
+  right: 5%;
+  background-color: #0f8d8d;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+}
+
+.logo-p {
+  font-size: 3.2rem;
+  display: inline-block;
+  color: red;
 }
 
 .new-game {

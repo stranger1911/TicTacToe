@@ -43,6 +43,7 @@ resetGame.addEventListener('click', function(){
         el.disabled = false;
     })
     winner.innerText = '';
+    player = true;
 })
 
 newGame.addEventListener('click', function(){
@@ -51,6 +52,7 @@ newGame.addEventListener('click', function(){
         el.disabled = false;
     })
     winner.innerText = '';
+    player = true;
     resetGame.style.display = 'block';
-                newGame.style.display = 'none';
+    newGame.style.display = 'none';
 })
