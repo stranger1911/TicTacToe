@@ -28,6 +28,9 @@ const checkWinner = () =>{
 
         if(pos1Val1 != '' && pos2Val2 != '' && pos3Val3 != ''){
             if(pos1Val1 === pos2Val2 && pos2Val2 === pos3Val3){
+                box.forEach(el=>{
+                    el.disabled = true;
+                })
                 winner.innerText = `Player ${pos1Val1} win's ):`
                 resetGame.style.display = 'none';
                 newGame.style.display = 'block';
