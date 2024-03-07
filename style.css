@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ccd5ae;
+}
+
+.title {
+  font-size: 3.2rem;
+  margin: 2rem 0;
+}
+
+.new-game {
+  width: 12rem;
+  height: 4rem;
+  margin: 2rem;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  background-color: #0f8d8d;
+  color: #ccd5ae;
+  cursor: pointer;
+  display: none;
+}
+
+.reset-game {
+  width: 12rem;
+  height: 4rem;
+  margin: 2rem;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  background-color: #0f8d8d;
+  color: #ccd5ae;
+  cursor: pointer;
+}
+
+.game {
+  width: 72vmin;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.box {
+  width: 24vmin;
+  height: 24vmin;
+  border: 1px solid rgb(235, 235, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: #0f8d8d;
+  color: #ccd5ae;
+  border: 1px solid #edede9;
+}
+
+.winner {
+  font-size: 3.2rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 550px) {
+  .game {
+    width: 90vmin;
+  }
+
+  .box {
+    width: 30vmin;
+    height: 30vmin;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 300px) {
+  .box {
+    font-size: 6rem;
+  }
+}
